@@ -1,0 +1,57 @@
+.skeleton__card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  max-width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 120px;
+  width: 450px;
+  animation: pulse 1s ease infinite alternate;
+  border-radius: 10px;
+}
+
+.skeleton__img {
+  border-radius: 50%;
+  background-color: rgb(126, 125, 125);
+  height: 100px;
+  width: 100px;
+  animation: pulse 1s ease infinite alternate;
+}
+.skeleton__info {
+  background-color: rgb(126, 125, 125);
+  height: 100px;
+  width: 250px;
+  animation: pulse 1s ease infinite alternate;
+  border-radius: 8px;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 500px) {
+  .skeleton__card {
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .skeleton__img {
+    height: 50px;
+    width: 50px;
+  }
+  .skeleton__info {
+    height: 30px;
+  }
+}
